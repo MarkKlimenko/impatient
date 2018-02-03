@@ -1,34 +1,33 @@
 package systems.vostok.algo.insertionsort
 
+import scala.collection.mutable.ArrayBuffer
+
 object InsertionSortUp {
-
   def main(args: Array[String]): Unit = {
-    var data = List(24, 85, 49, 18, 0, 37)
+    var data = ArrayBuffer(24, 85, 49, 18, 0, 37, 24, 85, 49, 18, 0, 37, 24, 85, 49, 18, 0, 37)
 
-    println(data.sorted)
+    val timeS = System.currentTimeMillis()
+    println(data.sorted.toString)
     println(sort(data))
+    println(System.currentTimeMillis()-timeS)
   }
 
-  def sort(data: List[Int]): List[Int] = {
-
-    var updatedData = data
+  def sort(data: ArrayBuffer[Int]): ArrayBuffer[Int] = {
     var j = 0
 
-    for ( j <- 1 to updatedData.size - 1) {
-
+    for ( j <- 1 to data.size - 1) {
       var i = j-1
-      var key : Int = updatedData(j)
+      var key = data(j)
 
-      while(i>=0 && key<updatedData(i)) {
+      while(i>=0 && key<data(i)) {
+        var dump = data(i)
 
-        var dump : Int = updatedData(i)
-
-        updatedData = updatedData.updated(i,key)
-        updatedData = updatedData.updated(i+1,dump)
+        data(i) = key
+        data(i+1) = dump
 
         i = i - 1
       }
     }
-    updatedData
+    data
   }
 }

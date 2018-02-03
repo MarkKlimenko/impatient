@@ -1,11 +1,13 @@
 package systems.vostok.algo.insertionsort
 
 class InsertionSortUp {
-
     static void main(String[] args) {
-        List data = [24, 85, 49, 18, 0, 37]
+        List data = [24, 85, 49, 18, 0, 37, 24, 85, 49, 18, 0, 37, 24, 85, 49, 18, 0, 37]
+
+        def timeS = System.currentTimeMillis()
         println(data.clone().sort())
         println(sort(data))
+        println(System.currentTimeMillis() - timeS)
     }
 
     static List sort(List data) {
