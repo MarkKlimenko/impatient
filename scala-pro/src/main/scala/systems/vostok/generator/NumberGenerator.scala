@@ -10,17 +10,16 @@ class NumberGenerator {
     file.createNewFile()
 
     val bw = new BufferedWriter(new FileWriter(file))
-    bw.write(generateSequence())
+    bw.write(generateSequence)
     bw.close()
   }
 
   def generateSequence: String = {
     val r = new scala.util.Random(1000000)
-
     val sequence = new ArrayBuffer[Int]()
 
-    for (i <- 1 to 5000) {
-      sequence += r.nextInt(100)
+    for (i <- 1 to 50000) {
+      sequence += r.nextInt(10000)
     }
 
     sequence.mkString(" ")

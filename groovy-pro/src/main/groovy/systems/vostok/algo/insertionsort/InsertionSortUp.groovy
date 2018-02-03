@@ -2,12 +2,16 @@ package systems.vostok.algo.insertionsort
 
 class InsertionSortUp {
     static void main(String[] args) {
-        List data = [24, 85, 49, 18, 0, 37, 24, 85, 49, 18, 0, 37, 24, 85, 49, 18, 0, 37]
+        List data = getSequence()
 
         def timeS = System.currentTimeMillis()
         println(data.clone().sort())
         println(sort(data))
-        println(System.currentTimeMillis() - timeS)
+        println(System.currentTimeMillis() - timeS) //87187
+    }
+
+    static List getSequence() {
+        new File("dump/generated.txt").getText().split(' ').collect { it as Integer }
     }
 
     static List sort(List data) {
