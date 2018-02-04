@@ -13,7 +13,7 @@ class TimeChecker {
     initialTime
   }
 
-  def check(): Long = {
+  def printCurrent(): Long = {
     val checkedTime = System.currentTimeMillis() - initialTime
     logger.info("Checked time: {}", System.currentTimeMillis() - initialTime)
     checkedTime
