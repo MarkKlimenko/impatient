@@ -10,7 +10,7 @@ class NumberGenerator {
     file.createNewFile()
 
     val bw = new BufferedWriter(new FileWriter(file))
-    bw.write(generateSequence)
+    bw write generateSequence
     bw.close()
   }
 
