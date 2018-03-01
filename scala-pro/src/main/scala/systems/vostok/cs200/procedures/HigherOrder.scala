@@ -1,7 +1,6 @@
 package systems.vostok.cs200.procedures
 
-object Solving extends App {
-
+object HigherOrder extends App {
   printCustom(simplePrinter, "SOMETHING")
   printCustom(complexPrinter, "SOMETHING")
 
