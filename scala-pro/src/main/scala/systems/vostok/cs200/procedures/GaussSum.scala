@@ -13,6 +13,6 @@ object GaussSum extends App {
   }
 
   def calculateGsRecursion(i: Int): Int = {
-    if(i == 0) 0 else i + calculateGsRecursion(i - 1)
+    if(i == 1) 1 else i + calculateGsRecursion(i - 1)
   }
 }
