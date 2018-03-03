@@ -15,8 +15,8 @@ object GuardsSample extends App {
 
   def exec(ch: String): Unit = {
     ch match {
-      case _ if checkA(ch) => print("A checked")
-      case _ if checkB(ch) => print("B checked")
+      case it if checkA(it) => print("A checked")
+      case it if checkB(it) => print("B checked")
     }
   }
 }
