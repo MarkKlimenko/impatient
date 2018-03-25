@@ -6,5 +6,11 @@ public class Test {
             System.out.println("test");
         }
 
+        switch (15){
+            case 16: break;
+            default: break;
+            case 19: break;
+        }
+
     }
 }
