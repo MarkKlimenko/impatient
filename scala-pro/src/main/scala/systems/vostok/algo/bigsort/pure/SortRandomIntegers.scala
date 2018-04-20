@@ -1,9 +1,7 @@
 package systems.vostok.algo.bigsort.pure
 
-import scala.collection.mutable.ArrayBuffer
-
 object SortRandomIntegers extends App {
-  val size: Int = 45000000
+  /*val size: Int = 45000000
   val array = ArrayBuffer[Int]()
 
   (0 to size).foreach(it =>
@@ -11,4 +9,8 @@ object SortRandomIntegers extends App {
   )
 
   array.foreach(println)
+*/
+  (0 to 45000000).map(it => (Math.random() * it).toInt)
+    .sorted
+    .foreach(println)
 }
