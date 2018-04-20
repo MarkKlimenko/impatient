@@ -6,3 +6,6 @@
 /scala-pro/project/
 /groovy-pro/build/
 /dump/
+/scala-pro/out/
+/scala-pro/.gradle/
+/scala-pro/build/
