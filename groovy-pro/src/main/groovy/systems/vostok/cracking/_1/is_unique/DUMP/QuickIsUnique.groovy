@@ -1,4 +1,4 @@
-package systems.vostok.cracking._1.is_unique
+package systems.vostok.cracking._1.is_unique.DUMP
 
 class QuickIsUnique {
 
