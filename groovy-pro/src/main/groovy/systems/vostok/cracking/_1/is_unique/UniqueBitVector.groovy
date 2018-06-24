@@ -1,5 +1,6 @@
 package systems.vostok.cracking._1.is_unique
 
+
 class UniqueBitVector {
     public static void main(String[] args) {
         String target = 'qwertyu'
@@ -20,5 +21,16 @@ class UniqueBitVector {
             }
         }
         true
+    }
+}
+
+class AX{
+    static int[] x = new int[0];
+    static{
+        x[0] = 10;
+    }
+
+    public static void main(String[] args){
+        AX ax = new AX();
     }
 }
