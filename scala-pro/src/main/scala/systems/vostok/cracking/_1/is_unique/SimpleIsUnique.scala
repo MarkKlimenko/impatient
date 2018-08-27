@@ -4,10 +4,10 @@ object SimpleIsUnique extends App {
   val value: String = "kgfkhgckytdotyfp"
 
 
-  for (i = 0; ) {
+  /*for (i = 0; ) {
 
 
-  }
+  }*/
 
   value.foreach { letter =>
     var unique: Boolean = true
