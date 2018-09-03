@@ -5,16 +5,12 @@ public class TriangularNumbers {
         System.out.println(recursionCompute(6));
         System.out.println(iterationCompute(6));
     }
-    
-    private static int recursionCompute(int i) {
-        return recursionCompute(0, i);
-    }
-    private static int recursionCompute(int sum, int i) {
-        if(i<1) {
-            return sum;
-        }
 
-        return i + recursionCompute(sum, --i);
+    private static int recursionCompute(int i) {
+        if(i<1) {
+            return 0;
+        }
+        return i + recursionCompute(--i);
     }
 
     
