@@ -1,4 +1,4 @@
-package systems.vostok.test;
+package systems.vostok.dump.test;
 
 import java.util.Arrays;
 import java.util.List;

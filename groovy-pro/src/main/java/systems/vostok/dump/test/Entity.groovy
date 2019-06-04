@@ -1,4 +1,4 @@
-package systems.vostok.test
+package systems.vostok.dump.test
 
 import groovy.transform.Canonical
 import groovy.transform.EqualsAndHashCode

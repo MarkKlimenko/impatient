@@ -1,4 +1,4 @@
-package systems.vostok.bigsort.pure;
+package systems.vostok.dump.pure;
 
 public class Test {
     static boolean matrix[][];

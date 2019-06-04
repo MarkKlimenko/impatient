@@ -1,4 +1,4 @@
-package systems.vostok.interview;
+package systems.vostok.dump.interview;
 
 import java.util.function.IntConsumer;
 import java.util.stream.IntStream;

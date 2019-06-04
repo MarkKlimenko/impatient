@@ -1,4 +1,4 @@
-package systems.vostok.interview;
+package systems.vostok.dump.interview;
 
 public class TriangularNumbers {
     public static void main(String[] args) {

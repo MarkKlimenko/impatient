@@ -1,4 +1,4 @@
-package systems.vostok.bigsort.pure;
+package systems.vostok.dump.pure;
 
 import java.util.stream.IntStream;
 
