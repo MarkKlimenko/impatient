@@ -1,0 +1,19 @@
+CPU 40%
+
+> Task :jmh
+
+# Run progress: 80,00% complete, ETA 00:00:22
+# Fork: 5 of 5
+
+# Warmup Iteration   1: RouteData{route=[santa, cupertino, berkeley, sanFrancisco, monteray, fremont, millValley, berbank, paloAlto, marin], distance=50.653649085607}
+5,682 s/op
+# Warmup Iteration   2: RouteData{route=[santa, cupertino, berkeley, sanFrancisco, monteray, fremont, millValley, berbank, paloAlto, marin], distance=50.653649085607}
+5,755 s/op
+Iteration   1: RouteData{route=[santa, cupertino, berkeley, sanFrancisco, monteray, fremont, millValley, berbank, paloAlto, marin], distance=50.653649085607}
+5,576 s/op
+Iteration   2: RouteData{route=[santa, cupertino, berkeley, sanFrancisco, monteray, fremont, millValley, berbank, paloAlto, marin], distance=50.653649085607}
+5,363 s/op
+
+
+Benchmark                      Mode  Cnt  Score   Error  Units
+BenchmarkRunner.sailsPersonRx    ss   10  5,275 ± 0,515   s/op

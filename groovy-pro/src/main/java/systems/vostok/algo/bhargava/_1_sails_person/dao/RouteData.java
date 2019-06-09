@@ -10,6 +10,11 @@ public class RouteData {
         this.route = route;
     }
 
+    public RouteData(List<String> route, Double distance) {
+        this.route = route;
+        this.distance = distance;
+    }
+
     public RouteData setDistance(Double distance) {
         this.distance = distance;
         return this;
