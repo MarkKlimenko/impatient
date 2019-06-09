@@ -2,21 +2,19 @@ package systems.vostok.algo.bhargava._1_sails_person.calculator;
 
 import systems.vostok.algo.bhargava._1_sails_person.dao.Point;
 
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 public class DistanceCalculator {
     private Map<String, Point> data;
-    private Map<String, Double> cachedDistances = new HashMap<>();
+    private Map<String, Double> cachedDistances = new ConcurrentHashMap<>();
 
     public DistanceCalculator(Map<String, Point> data) {
         this.data = data;
     }
 
     public Double calculate(List<String> route) {
-        List<Double> distanceList = new LinkedList<>();
+        List<Double> distanceList = new ArrayList<>(route.size() - 1);
 
         for (int i = 0; i < route.size() - 1; i++) {
             String routePartIndex = route.get(i) + route.get(i+1);
@@ -37,6 +35,11 @@ public class DistanceCalculator {
             }
         }
 
-        return distanceList.stream().mapToDouble(Double::doubleValue).sum();
+        Double sum = 0D;
+        for (Double distance : distanceList) {
+            sum += distance;
+        }
+
+        return sum;
     }
 }
