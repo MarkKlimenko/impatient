@@ -13,10 +13,13 @@ public class DataSupplier {
         data.put("berkeley", new Point(10, 1));
         data.put("paloAlto", new Point(2, 12));
         data.put("fremont", new Point(11, 11));
+
         data.put("cupertino", new Point(4, 6));
         data.put("millValley", new Point(5, 1));
         data.put("santa", new Point(15, 13));
         data.put("berbank", new Point(20, 15));
+        data.put("monteray", new Point(30, 20));
+        // 10
 
         return data;
     }

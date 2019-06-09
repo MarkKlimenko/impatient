@@ -19,7 +19,7 @@ public class DistanceCalculator {
         List<Double> distanceList = new LinkedList<>();
 
         for (int i = 0; i < route.size() - 1; i++) {
-            String routePartIndex = route.get(i) + "_" + route.get(i+1);
+            String routePartIndex = route.get(i) + route.get(i+1);
 
             if(cachedDistances.get(routePartIndex) != null) {
                 distanceList.add(cachedDistances.get(routePartIndex));

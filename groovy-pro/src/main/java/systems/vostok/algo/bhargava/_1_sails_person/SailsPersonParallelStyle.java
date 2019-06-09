@@ -12,7 +12,8 @@ import java.util.Map;
 import java.util.stream.Stream;
 
 /**
- * heaps perm - 2100
+ * heaps perm - 9 elements - 2_100
+ * heaps perm - 10 elements - 14_800 - occasionally NullPointerException
  */
 public class SailsPersonParallelStyle {
     public static void main(String[] args) {

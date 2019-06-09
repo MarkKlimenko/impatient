@@ -11,7 +11,8 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * heaps perm - 2700
+ * heaps perm - 9 elements - 2_700
+ * heaps perm - 10 elements - 28_500
  */
 public class SailsPersonSimpleForStyle {
     public static void main(String[] args) {
