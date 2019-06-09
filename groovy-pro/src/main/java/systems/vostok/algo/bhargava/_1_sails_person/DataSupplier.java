@@ -15,6 +15,8 @@ public class DataSupplier {
         data.put("fremont", new Point(11, 11));
         data.put("cupertino", new Point(4, 6));
         data.put("millValley", new Point(5, 1));
+        data.put("santa", new Point(15, 13));
+        data.put("berbank", new Point(20, 15));
 
         return data;
     }

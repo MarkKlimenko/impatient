@@ -4,6 +4,7 @@ import systems.vostok.algo.bhargava._1_sails_person.calculator.DistanceCalculato
 import systems.vostok.algo.bhargava._1_sails_person.dao.Point;
 import systems.vostok.algo.bhargava._1_sails_person.dao.RouteData;
 import systems.vostok.algo.bhargava._1_sails_person.permutations.SimplePermGenerator;
+import systems.vostok.algo.bhargava._1_sails_person.permutations.heaps.HeapsPermGenerator;
 
 import java.util.*;
 import java.util.stream.Stream;
@@ -32,6 +33,6 @@ public class SailsPersonParallelStyle {
 
     static List<List<String>> findAllPossibleRoutes(Map<String, Point> data) {
         List<String> cities = new ArrayList<>(data.keySet());
-        return new SimplePermGenerator<String>().generate(cities);
+        return new HeapsPermGenerator<String>().generate(cities);
     }
 }

@@ -3,6 +3,7 @@ package systems.vostok.algo.bhargava._1_sails_person;
 import systems.vostok.algo.bhargava._1_sails_person.calculator.DistanceCalculator;
 import systems.vostok.algo.bhargava._1_sails_person.dao.Point;
 import systems.vostok.algo.bhargava._1_sails_person.permutations.SimplePermGenerator;
+import systems.vostok.algo.bhargava._1_sails_person.permutations.heaps.HeapsPermGenerator;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -10,7 +11,8 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 500-600
+ * simple perm - 11000
+ * heaps perm - 11000
  */
 public class SailsPersonSimpleForStyle {
     public static void main(String[] args) {
@@ -35,8 +37,11 @@ public class SailsPersonSimpleForStyle {
     }
 
     static List<List<String>> findAllPossibleRoutes(Map<String, Point> data) {
+        //List<String> cities = new ArrayList<>(data.keySet());
+        //return new SimplePermGenerator<String>().generate(cities);
+
         List<String> cities = new ArrayList<>(data.keySet());
-        return new SimplePermGenerator<String>().generate(cities);
+        return new HeapsPermGenerator<String>().generate(cities);
     }
 
     static Map<List<String>, Double> calculateDistances(Map<String, Point> data, List<List<String>> possibleRoutes) {
