@@ -10,9 +10,14 @@ public class BinarySearch {
                 .toArray();
 
         Arrays.stream(data).forEach(System.out::print); // 1..100
+
         System.out.println();
         System.out.println(find(data, 4) == 4); //true
         System.out.println(find(data, 13) == -1); //true
+
+        System.out.println();
+        System.out.println(findRecursive(data, 4) == 4); //true
+        System.out.println(findRecursive(data, 13) == -1); //true
     }
 
     // find not recursive
@@ -35,6 +40,24 @@ public class BinarySearch {
         return -1;
     }
 
-    // TODO: Find recursive
+    // find recursive
+    static int findRecursive(int[] data, int n) {
+        return findRecursive(data, n, 0, data.length - 1);
+    }
 
+    static int findRecursive(int[] data, int n, int firstIndex, int lastIndex) {
+        if(firstIndex >= lastIndex) {
+            return -1;
+        }
+
+        int middleIndex = (firstIndex + lastIndex) / 2;
+
+        if(data[middleIndex] == n) {
+            return n;
+        } else if(n < data[middleIndex]) {
+            return findRecursive(data, n, firstIndex, middleIndex - 1);
+        } else {
+            return findRecursive(data, n, middleIndex + 1, lastIndex);
+        }
+    }
 }

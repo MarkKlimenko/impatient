@@ -1,5 +1,7 @@
 package systems.vostok.test
 
+import systems.vostok.dump.test.Entity
+
 class Test {
     static void main(String[] args) {
         Long point1 = System.currentTimeMillis()
