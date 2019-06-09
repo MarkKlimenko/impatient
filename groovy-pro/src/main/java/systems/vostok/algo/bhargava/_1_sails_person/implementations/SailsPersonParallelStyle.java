@@ -1,5 +1,7 @@
-package systems.vostok.algo.bhargava._1_sails_person;
+package systems.vostok.algo.bhargava._1_sails_person.implementations;
 
+import org.openjdk.jmh.annotations.Benchmark;
+import systems.vostok.algo.bhargava._1_sails_person.data.DataSupplier;
 import systems.vostok.algo.bhargava._1_sails_person.calculator.DistanceCalculator;
 import systems.vostok.algo.bhargava._1_sails_person.dao.Point;
 import systems.vostok.algo.bhargava._1_sails_person.dao.RouteData;
@@ -19,8 +21,6 @@ public class SailsPersonParallelStyle {
     public static void main(String[] args) {
         Map<String, Point> data = DataSupplier.getMapData();
 
-        long aTime = System.currentTimeMillis();
-
         DistanceCalculator calculator = new DistanceCalculator(data);
 
         Stream<RouteData> dataStream = findAllPossibleRoutes(data)
@@ -31,7 +31,6 @@ public class SailsPersonParallelStyle {
 
         RouteData minRoute = dataStream.min(Comparator.comparingDouble(RouteData::getDistance)).get();
         System.out.println("Min: " + minRoute);
-        System.out.println(System.currentTimeMillis() - aTime);
     }
 
     static List<List<String>> findAllPossibleRoutes(Map<String, Point> data) {

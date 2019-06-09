@@ -1,4 +1,4 @@
-package systems.vostok.algo.bhargava._1_sails_person;
+package systems.vostok.algo.bhargava._1_sails_person.data;
 
 import systems.vostok.algo.bhargava._1_sails_person.dao.Point;
 

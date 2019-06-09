@@ -1,8 +1,8 @@
-package systems.vostok.algo.bhargava._1_sails_person;
+package systems.vostok.algo.bhargava._1_sails_person.implementations;
 
+import systems.vostok.algo.bhargava._1_sails_person.data.DataSupplier;
 import systems.vostok.algo.bhargava._1_sails_person.calculator.DistanceCalculator;
 import systems.vostok.algo.bhargava._1_sails_person.dao.Point;
-import systems.vostok.algo.bhargava._1_sails_person.permutations.SimplePermGenerator;
 import systems.vostok.algo.bhargava._1_sails_person.permutations.heaps.HeapsPermGenerator;
 
 import java.util.ArrayList;
@@ -18,8 +18,6 @@ public class SailsPersonSimpleForStyle {
     public static void main(String[] args) {
         Map<String, Point> data = DataSupplier.getMapData();
 
-        long aTime = System.currentTimeMillis();
-
         Map<List<String>, Double> distances = calculateDistances(data, findAllPossibleRoutes(data));
 
         Map.Entry<List<String>, Double> minDistance = null;
@@ -33,7 +31,6 @@ public class SailsPersonSimpleForStyle {
         }
 
         System.out.println("Min dist " + minDistance);
-        System.out.println(System.currentTimeMillis() - aTime);
     }
 
     static List<List<String>> findAllPossibleRoutes(Map<String, Point> data) {

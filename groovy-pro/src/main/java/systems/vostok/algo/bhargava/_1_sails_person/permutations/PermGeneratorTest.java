@@ -1,6 +1,6 @@
 package systems.vostok.algo.bhargava._1_sails_person.permutations;
 
-import systems.vostok.algo.bhargava._1_sails_person.DataSupplier;
+import systems.vostok.algo.bhargava._1_sails_person.data.DataSupplier;
 import systems.vostok.algo.bhargava._1_sails_person.dao.Point;
 import systems.vostok.algo.bhargava._1_sails_person.permutations.heaps.HeapsPermGenerator;
 
