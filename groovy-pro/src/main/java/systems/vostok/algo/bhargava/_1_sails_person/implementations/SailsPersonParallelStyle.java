@@ -16,6 +16,7 @@ import java.util.stream.Stream;
 /**
  * heaps perm - 9 elements - 2_100
  * heaps perm - 10 elements - 14_800 - occasionally NullPointerException
+ * BenchmarkRunner.sailsPersonParallel laptop  ss   10    13,172 ▒ 1,088   s/op
  */
 public class SailsPersonParallelStyle {
     public static void main(String[] args) {
