@@ -1,0 +1,25 @@
+Benchmark                                                          Mode  Cnt   Score   Error  Units
+BenchmarkRunner.sailsPersonParallel                               thrpt   10   0,180 ± 0,023  ops/s
+BenchmarkRunner.sailsPersonSimple                                 thrpt   10   0,074 ± 0,009  ops/s
+BenchmarkRunner.sailsPersonParallel                                avgt   10   5,467 ± 0,363   s/op
+BenchmarkRunner.sailsPersonSimple                                  avgt   10  13,788 ± 1,741   s/op
+BenchmarkRunner.sailsPersonParallel                              sample   21   5,246 ± 0,464   s/op
+BenchmarkRunner.sailsPersonParallel:sailsPersonParallel·p0.00    sample        4,010           s/op
+BenchmarkRunner.sailsPersonParallel:sailsPersonParallel·p0.50    sample        5,260           s/op
+BenchmarkRunner.sailsPersonParallel:sailsPersonParallel·p0.90    sample        5,909           s/op
+BenchmarkRunner.sailsPersonParallel:sailsPersonParallel·p0.95    sample        6,133           s/op
+BenchmarkRunner.sailsPersonParallel:sailsPersonParallel·p0.99    sample        6,157           s/op
+BenchmarkRunner.sailsPersonParallel:sailsPersonParallel·p0.999   sample        6,157           s/op
+BenchmarkRunner.sailsPersonParallel:sailsPersonParallel·p0.9999  sample        6,157           s/op
+BenchmarkRunner.sailsPersonParallel:sailsPersonParallel·p1.00    sample        6,157           s/op
+BenchmarkRunner.sailsPersonSimple                                sample   10  13,306 ± 2,251   s/op
+BenchmarkRunner.sailsPersonSimple:sailsPersonSimple·p0.00        sample       11,677           s/op
+BenchmarkRunner.sailsPersonSimple:sailsPersonSimple·p0.50        sample       13,011           s/op
+BenchmarkRunner.sailsPersonSimple:sailsPersonSimple·p0.90        sample       15,495           s/op
+BenchmarkRunner.sailsPersonSimple:sailsPersonSimple·p0.95        sample       15,519           s/op
+BenchmarkRunner.sailsPersonSimple:sailsPersonSimple·p0.99        sample       15,519           s/op
+BenchmarkRunner.sailsPersonSimple:sailsPersonSimple·p0.999       sample       15,519           s/op
+BenchmarkRunner.sailsPersonSimple:sailsPersonSimple·p0.9999      sample       15,519           s/op
+BenchmarkRunner.sailsPersonSimple:sailsPersonSimple·p1.00        sample       15,519           s/op
+BenchmarkRunner.sailsPersonParallel                                  ss   10   6,197 ± 1,736   s/op
+BenchmarkRunner.sailsPersonSimple                                    ss   10  16,227 ± 4,184   s/op

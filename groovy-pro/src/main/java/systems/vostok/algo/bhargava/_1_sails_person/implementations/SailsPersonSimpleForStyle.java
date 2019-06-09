@@ -13,7 +13,8 @@ import java.util.Map;
 /**
  * heaps perm - 9 elements - 2_700
  * heaps perm - 10 elements - 28_500
- * BenchmarkRunner.sailsPersonSimple laptop  ss   10    37,484 ▒ 9,199   s/op
+ * BenchmarkRunner.sailsPersonSimple i3  ss   10    37,484 ± 9,199   s/op
+ * BenchmarkRunner.sailsPersonSimple i5  ss   10    16,227 ± 4,184   s/op
  */
 public class SailsPersonSimpleForStyle {
     public static void main(String[] args) {
