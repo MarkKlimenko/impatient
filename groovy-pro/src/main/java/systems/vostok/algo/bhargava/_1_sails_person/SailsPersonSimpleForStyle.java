@@ -11,8 +11,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * simple perm - 11000
- * heaps perm - 11000
+ * heaps perm - 2700
  */
 public class SailsPersonSimpleForStyle {
     public static void main(String[] args) {
@@ -25,7 +24,7 @@ public class SailsPersonSimpleForStyle {
         Map.Entry<List<String>, Double> minDistance = null;
 
         for (Map.Entry<List<String>, Double> distance : distances.entrySet()) {
-            System.out.println(distance.getKey() + "=" + distance.getValue());
+            //System.out.println(distance.getKey() + "=" + distance.getValue());
 
             if (minDistance == null || minDistance.getValue().compareTo(distance.getValue()) > 0) {
                 minDistance = distance;

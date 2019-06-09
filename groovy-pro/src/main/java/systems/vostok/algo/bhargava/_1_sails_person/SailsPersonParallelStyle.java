@@ -3,14 +3,16 @@ package systems.vostok.algo.bhargava._1_sails_person;
 import systems.vostok.algo.bhargava._1_sails_person.calculator.DistanceCalculator;
 import systems.vostok.algo.bhargava._1_sails_person.dao.Point;
 import systems.vostok.algo.bhargava._1_sails_person.dao.RouteData;
-import systems.vostok.algo.bhargava._1_sails_person.permutations.SimplePermGenerator;
 import systems.vostok.algo.bhargava._1_sails_person.permutations.heaps.HeapsPermGenerator;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Map;
 import java.util.stream.Stream;
 
 /**
- * 600-700
+ * heaps perm - 2100
  */
 public class SailsPersonParallelStyle {
     public static void main(String[] args) {
@@ -24,7 +26,7 @@ public class SailsPersonParallelStyle {
                 .parallelStream()
                 .map(route -> new RouteData(route))
                 .map(routeData -> routeData.setDistance(calculator.calculate(routeData.getRoute())))
-                .peek(routeData -> System.out.println(routeData));
+                /*.peek(routeData -> *//*System.out.println(routeData)*//*)*/;
 
         RouteData minRoute = dataStream.min(Comparator.comparingDouble(RouteData::getDistance)).get();
         System.out.println("Min: " + minRoute);
