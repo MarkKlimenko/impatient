@@ -1,0 +1,4 @@
+rootProject.name = 'impatient'
+
+include 'groovy-pro'
+include 'scala-pro'
