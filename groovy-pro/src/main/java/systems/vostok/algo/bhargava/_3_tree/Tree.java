@@ -6,6 +6,7 @@ import systems.vostok.algo.bhargava._3_tree.element.TreeElement;
 public class Tree<T extends Comparable> {
     Node<T> root;
 
+    // TODO: Balance tree
     public TreeElement<T> add(T addedValue) {
         if (root == null) {
             return root = new Node<>(addedValue);
