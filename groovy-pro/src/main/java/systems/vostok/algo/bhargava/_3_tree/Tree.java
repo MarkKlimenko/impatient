@@ -1,23 +1,24 @@
 package systems.vostok.algo.bhargava._3_tree;
 
 import systems.vostok.algo.bhargava._3_tree.element.Node;
+import systems.vostok.algo.bhargava._3_tree.element.TreeElement;
 
 public class Tree<T extends Comparable> {
     Node<T> root;
 
-    public Node<T> add(T addedValue) {
-        if(root == null) {
-            return root = new Node<>(addedValue, null, null);
+    public TreeElement<T> add(T addedValue) {
+        if (root == null) {
+            return root = new Node<>(addedValue);
         }
         return root.add(addedValue);
     }
 
-    public Node<T> find(T searchedValue) {
+    public TreeElement<T> find(T searchedValue) {
         return root.find(searchedValue);
     }
 
-    public Node<T> findNext(T value) {
-        Node<T> pivot = find(value);
+    public TreeElement<T> findNext(T value) {
+        TreeElement<T> pivot = find(value);
 
         //TODO: Implement
         return null;
