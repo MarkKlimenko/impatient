@@ -1,11 +1,9 @@
-
 /.idea/
-/groovy-pro/.gradle/
-/groovy-pro/out/
-/scala-pro/target/
+*/.gradle/
+*/out/
+*/target/
+*/build/
+
 /scala-pro/project/
-/groovy-pro/build/
 /dump/
-/scala-pro/out/
-/scala-pro/.gradle/
-/scala-pro/build/
+
