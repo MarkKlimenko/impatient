@@ -50,6 +50,10 @@ public class Tree<T extends Comparable> {
     }
 
     public Node<T> findNext(T value) {
+        Node<T> pivot = find(value);
+
+
+
         //TODO: Implement
         return null;
     }
